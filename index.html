@@ -8,8 +8,8 @@
   </head>
   <body
     style="
-      background-image: url('./public/background_img2.jpeg');
-      background-size: cover;
+      background-image: url('./public/ba.jpeg');
+      background-size:cover;
     "
   >
     <header>
@@ -18,15 +18,24 @@
       </div>
     </header>
     <main>
-      <div class="main-container">
-        <h2>Un lenguaje de programación backend es: ______</h2>
-        <form action="index.php" method="post">
+      <div class="main-container" action="index.php" method="post">
+        <h2>Un lenguaje de programación backend es: <?php echo $oculta; ?></h2>
+        <form>
           <input type="text" name="letra" id="letra" />
           <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar">
+          <input type="range" id="Intentos" min="3" max="6" value="5" oninput="actualizarOutput()">
+          <label for="Intentos">Número de intentos: </label>
+          <output id="valorIntentos">3</output>
+          <input type="hidden" name="palabra" value="<?php echo $palabra; ?>">
+
         </form>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>©2024.Todos los derechos reservados</p>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
