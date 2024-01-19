@@ -1,10 +1,24 @@
 <?php
 
 // Iniciar una sesión para guardar los datos del juego en el servidor
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
 
 require_once "words.php";
 require_once "functions.php";
+
+// Inicializar las variables de sesión si no existen
+if (!isset($_SESSION['oculta'])) {
+    $_SESSION['oculta'] = '';  // o cualquier valor inicial que desees
+}
+if (!isset($_SESSION['intentos'])) {
+    $_SESSION['intentos'] = '';  // o cualquier valor inicial que desees
+}
+if (!isset($_SESSION['letras_usadas'])) {
+    $_SESSION['letras_usadas'] = array();
+}
+
 
 // Comprobar si se ha enviado una letra desde el formulario
 if (isset($_POST['letra'])) {

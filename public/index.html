@@ -7,24 +7,59 @@
     <title>P7 JUEGO DEL AHORCADO</title>
   </head>
   <body
-    style="background-image: url('./img/background_3.jpeg'); background-size: cover"
+    style="
+      background-image: url('./img/background_img4.jpeg');
+      background-size: cover;
+    "
   >
     <header>
       <div>
         <h1>EL AHORCADO<br /><br />Backend Edition</h1>
       </div>
     </header>
-    <button id="jugar">Jugar</button>
+
     <main>
+      <button id="jugar" class="play-button">Jugar</button>
       <div class="main-container" action="index.php" method="post">
         <h2>
           Un lenguaje de programación backend es:
           <?php echo $oculta; ?>
         </h2>
-        <?php include "./src/game,php"; 
+        <?php include "./src/game.php"; 
         ?>
+        <div id="teclado">
+          <button id="a"  onclick="comprobarletra('A')">A</button>
+          <button onclick="comprobarletra('B')">B</button>
+          <button onclick="comprobarletra('C')">C</button>
+          <button onclick="comprobarletra('D')">D</button>
+          <button onclick="comprobarletra('E')">E</button>
+          <button onclick="comprobarletra('F')">F</button>
+          <button onclick="comprobarletra('G')">G</button>
+          <button onclick="comprobarletra('H')">H</button>
+          <button onclick="comprobarletra('I')">I</button>
+          <button onclick="comprobarletra('J')">J</button>
+          <button onclick="comprobarletra('K')">K</button>
+          <button onclick="comprobarletra('L')">L</button>
+          <button onclick="comprobarletra('M')">M</button>
+          <button onclick="comprobarletra('N')">N</button>
+          <button onclick="comprobarletra('Ñ')">Ñ</button>
+          <button onclick="comprobarletra('O')">O</button>
+          <button onclick="comprobarletra('P')">P</button>
+          <button onclick="comprobarletra('Q')">Q</button>
+          <button onclick="comprobarletra('R')">R</button>
+          <button onclick="comprobarletra('S')">S</button>
+          <button onclick="comprobarletra('T')">T</button>
+          <button onclick="comprobarletra('U')">U</button>
+          <button onclick="comprobarletra('V')">V</button>
+          <button onclick="comprobarletra('W')">W</button>
+          <button onclick="comprobarletra('X')">X</button>
+          <button onclick="comprobarletra('Y')">Y</button>
+          <button onclick="comprobarletra('Z')">Z</button>
+          <button id="espacio" onclick="comprobarLetra(' ')">____</button>
+
+        </div>
         <form>
-          <input type="text" name="letra" id="letra" />
+          <input type="text" name="letra" id="letra" maxlength="1"/>
           <input type="submit" value="Enviar" />
           <input type="reset" value="Borrar" />
           <input
