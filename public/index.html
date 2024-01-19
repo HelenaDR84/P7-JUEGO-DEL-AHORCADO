@@ -7,10 +7,7 @@
     <title>P7 JUEGO DEL AHORCADO</title>
   </head>
   <body
-    style="
-      background-image: url('./public/ba.jpeg');
-      background-size:cover;
-    "
+    style="background-image: url('./img/background_3.jpeg'); background-size: cover"
   >
     <header>
       <div>
@@ -20,22 +17,38 @@
     <button id="jugar">Jugar</button>
     <main>
       <div class="main-container" action="index.php" method="post">
-        <h2>Un lenguaje de programación backend es: <?php echo $oculta; ?></h2>
+        <h2>
+          Un lenguaje de programación backend es:
+          <?php echo $oculta; ?>
+        </h2>
+        <?php include "./src/game,php"; 
+        ?>
         <form>
           <input type="text" name="letra" id="letra" />
           <input type="submit" value="Enviar" />
-          <input type="reset" value="Borrar">
-          <input type="range" id="Intentos" min="3" max="6" value="5" oninput="actualizarOutput()">
+          <input type="reset" value="Borrar" />
+          <input
+            type="range"
+            id="Intentos"
+            min="3"
+            max="6"
+            value="5"
+            oninput="actualizarOutput()"
+          />
           <label for="Intentos">Número de intentos: </label>
           <output id="valorIntentos">3</output>
-          <input type="hidden" name="palabra" value="<?php echo $palabra; ?>">
-
+          <input type="hidden" name="palabra" value="<?php echo $oculta; ?>" />
+          <input
+            type="hidden"
+            name="intentos"
+            value="<?php echo $intentos; ?>"
+          />
         </form>
       </div>
     </main>
 
     <footer>
-        <p>©2024.Todos los derechos reservados</p>
+      <p>©2024.Todos los derechos reservados</p>
     </footer>
     <script src="./index.js"></script>
   </body>
