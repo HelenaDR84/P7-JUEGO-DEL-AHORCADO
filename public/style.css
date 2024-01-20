@@ -1,204 +1,251 @@
 
+.navbar {
+  overflow: hidden;
+  background-color: #874386;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 h1 {
-    color: white;
-    font-size: 38px;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  color: rgb(180, 89, 151);
+  font-size: 38px;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+.start-container {
+  margin: 0 auto;
+  border: 5px;
+  padding-bottom: 15px;
+  max-width: 600px;
+  background-color: rgb(226, 224, 224);
+}
+
+.how-to-play-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(180, 89, 151);
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
 .play-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-background-color: blueviolet;
-width: 120px;
-height: 50px;
-    text-align: center;
-    cursor: pointer;
-    color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blueviolet;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.1);
-    background-color: purple;
-  }
-  
+  transform: scale(1.1);
+  background-color: purple;
+}
 
-  button:active {
-    transform: scale(0.9);
-    background-color: indigo;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
-  }
+button:active {
+  transform: scale(0.9);
+  background-color: indigo;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
 
 .main-container {
-    margin: 0 auto;
-    max-width: 600px;
-    background-color: rgb(251, 223, 223);
-    display: none;
-  }
-  
-  h2 {
-    text-align: center;
-    color: rgb(93, 81, 81);
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-  }
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: rgb(251, 223, 223);
+  display: none;
+}
 
-  #teclado {
-    display: grid;
-    grid-template-areas:
-      "q w e r t y u i o p"
-      ". a s d f g h j k l"
-      ". . z x c v b n m ."
-      ". . . espacio espacio espacio espacio . . .";
-      align-items: center;
-      margin-top: 10px;
-      margin-bottom: 20px;;
-      grid-gap: 10px;
-  }
-  
-  button {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 10px;;
+
+.word-container {
+  background-color: #b868b3; /* Un color de fondo claro */
+  border: 1px solid #874386; /* Un borde que coincide con el color de tu navbar */
+  padding: 5px;
+  margin: 10px 0;
+  width: fit-content;
+  text-align: center; /* Centra el texto */
+}
+h2 {
+  text-align: center;
+  color: rgb(93, 81, 81);
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+#hidden-word {
+  font-weight: bold;
+  color: #874386; /* Un color que coincide con el color de tu navbar */
+  font-size: 24px; /* Un tamaño de fuente más grande para destacar la palabra */
+}
+
+#teclado {
+  display: grid;
+  grid-template-areas:
+    "q w e r t y u i o p"
+    ". a s d f g h j k l"
+    ". . z x c v b n m ."
+    ". . . espacio espacio espacio espacio . . .";
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  grid-gap: 10px;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   background-color: blueviolet;
   width: 50px;
   height: 30px;
-      text-align: center;
-      cursor: pointer;
-      color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-      transform: scale(1.1);
-      background-color: purple;
-    }
-    
-  
-    button:active {
-      transform: scale(0.9);
-      background-color: indigo;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
-    }
-  
-  
-  #q {
-    grid-area: q;
-  }
-  
-  #w {
-    grid-area: w;
-  }
-  
-  #e {
-    grid-area: e;
-  }
-  
-  
-  form {
-    margin: 0 auto;
-    width: 300px;
-  }
-  
-  input {
-    height: 40px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border-color: white;
-    background-color: rgb(122, 102, 200);
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 10px;
-  }
-  
-  #letra {
-    width: 200px;
-  }
-  
-  input[type="submit"] {
-    width: 100px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: white;
-    color: black;
-  }
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
 
-  input[type="reset"] {
-    width: 100px;
-    height: 40px;
-    margin: 10px;
-    border-radius: 10px;
-    border-color: white;
-    background-color: rgb(122, 102, 200);
-    color: white;
-    font-family: Arial, sans-serif;
-    cursor: pointer;
-  }
-  
-  input[type="reset"]:hover {
-    background-color: white;
-    color: black;
-  }
-  input[type="range"] {
-    width: 200px;
-    height: 20px;
-    margin: 10px;
-    background-color: silver;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid black;
-  }
-  
-  input[type="range"]::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid black;
-  }
+button:hover {
+  transform: scale(1.1);
+  background-color: purple;
+}
 
-  label {
-    display: block;
-    color: rgb(93, 81, 81);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-  }
+button:active {
+  transform: scale(0.9);
+  background-color: indigo;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
 
-  footer {
-    width: 100%;
-    height: 20px;
-    margin: 0;
-    padding: 10px;
-    background-color: rgb(231, 160, 232);
-    border-top: 1px solid white;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  footer p {
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    text-align: center;
-  }
+#q {
+  grid-area: q;
+}
+
+#w {
+  grid-area: w;
+}
+
+#e {
+  grid-area: e;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+}
+
+input {
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: white;
+  background-color: rgb(122, 102, 200);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+}
+
+#letra {
+  width: 200px;
+}
+
+input[type="submit"] {
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: black;
+}
+
+input[type="reset"] {
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 10px;
+  border-color: white;
+  background-color: rgb(122, 102, 200);
+  color: white;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: white;
+  color: black;
+}
+input[type="range"] {
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+  background-color: silver;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+label {
+  display: block;
+  color: rgb(93, 81, 81);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgb(231, 160, 232);
+  border-top: 1px solid white;
+  position: absolute;
+  margin-top: 1px;;
+
+}
+
+footer p {
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
