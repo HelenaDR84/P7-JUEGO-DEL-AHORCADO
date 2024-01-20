@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
 // Definir una función que muestre el botón de reiniciar el juego
 function mostrar_boton() {
     // Mostrar un botón para reiniciar el juego
-    echo "<button id='reiniciar'>Reiniciar</button>";
+    echo "<button id='reiniciar'class= 'restart-button'>Reiniciar</button>";
   }
   
   // Definir una función que muestre la palabra oculta con espacios entre cada letra
@@ -56,9 +56,7 @@ function mostrar_boton() {
     }
     // Devolver la palabra oculta actualizada
     return $oculta;
-  }
-
-  
+  }  
 
   // Agregamos la función para reiniciar el juego
 function reiniciar_juego() {

@@ -1,6 +1,7 @@
 # P7-JUEGO-DEL-AHORCADO   
 
-# 🎮 El juego del ahorcado en PHP    (Pendiente de terminar de editar cuando el juego esté completo)
+# 🎮 El juego del ahorcado. Backend Edition
+
 
 Este proyecto consiste en la implementación del juego clásico del ahorcado en PHP, sin el uso de bases de datos. El juego permite que un usuario adivine una palabra oculta, mostrando su progreso y controlando los intentos realizados.
 
@@ -10,7 +11,7 @@ Este proyecto consiste en la implementación del juego clásico del ahorcado en 
   - El juego tiene que comenzar con la selección aleatoria de una palabra oculta de una lista predefinida.
   - La palabra oculta se debe mostrar en la interfaz como una serie de guiones bajos representando cada letra.
 - Jugabilidad:
-  - El usuario puede ingresar una letra en cada intento.
+  - El usuario puede ingresar una letra en cada intento. Tiene de 4 a 8 itentos según su selección.
   - El sistema debe validar si la letra ingresada está en la palabra oculta y actualizar la interfaz en consecuencia.
   - Se deben manejar y mostrar los intentos restantes.
 - Finalización del juego:
@@ -22,11 +23,6 @@ Este proyecto consiste en la implementación del juego clásico del ahorcado en 
 
 - Interfaz mejorada:
   - Utilización de estilos CSS para mejorar la presentación del juego.
-  - Uso de JavaScript para agregar interactividad adicional, como efectos visuales.
-- Palabras dinámicas:
-  - Permitir la carga de palabras desde un archivo externo.
-  - Implementar un formulario para que los usuarios puedan agregar nuevas palabras.
-
 
 ## 💻 Tecnologías Utilizadas
 

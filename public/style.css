@@ -75,6 +75,7 @@ button:active {
 .main-container {
   margin: 0 auto;
   max-width: 600px;
+  padding: 8px;
   background-color: rgb(251, 223, 223);
   display: none;
 }
@@ -140,17 +141,6 @@ button:active {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-#q {
-  grid-area: q;
-}
-
-#w {
-  grid-area: w;
-}
-
-#e {
-  grid-area: e;
-}
 
 form {
   margin: 0 auto;
@@ -230,6 +220,33 @@ label {
   font-family: Arial, sans-serif;
   font-size: 16px;
   text-align: center;
+}
+
+button.restart-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: blueviolet;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: purple;
+}
+
+button:active {
+  transform: scale(0.9);
+  background-color: indigo;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 footer {

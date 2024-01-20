@@ -95,6 +95,7 @@ if (isset($_POST['letra'])) {
             name="intentos"
             value="<?php echo $intentos; ?>"
           />
+          <?php mostrar_boton(); ?>
         </form>
       </div>
     </main>

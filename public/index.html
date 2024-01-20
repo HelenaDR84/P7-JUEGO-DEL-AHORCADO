@@ -18,7 +18,7 @@
     <main
       style="
       min-height: 100vh; 
-        background-image: url('./img/backg_5.jpeg');
+        background-image: url('./img/ba.jpeg');
         background-size: cover;
       "
     >
@@ -28,7 +28,7 @@
       <div id="start-container" class="start-container">
         <p class="how-to-play-text">
           REGLAS DEL JUEGO<br /><br />
-          Dispones de entre 3 y 6 fallos (según tu elección) para resolver la
+          Dispones de entre 4 y 8 fallos (según tu elección) para resolver la
           palabra.<br /><br />
           En esta edición practicaremos nuestros conocimientos sobre los
           lenguajes de Backend.<br /><br />
@@ -74,7 +74,6 @@
           <button onclick="comprobarletra('X')">X</button>
           <button onclick="comprobarletra('Y')">Y</button>
           <button onclick="comprobarletra('Z')">Z</button>
-          <button id="espacio" onclick="comprobarLetra(' ')">____</button>
         </div>
         <form>
           <input type="text" name="letra" id="letra" maxlength="1" />
@@ -83,19 +82,20 @@
           <input
             type="range"
             id="Intentos"
-            min="3"
-            max="6"
+            min="4"
+            max="8"
             value="5"
             oninput="actualizarOutput()"
           />
           <label for="Intentos">Número de intentos: </label>
-          <output id="valorIntentos">3</output>
+          <output id="valorIntentos">4</output>
           <input type="hidden" name="palabra" value="<?php echo $oculta; ?>" />
           <input
             type="hidden"
             name="intentos"
             value="<?php echo $intentos; ?>"
           />
+          <?php mostrar_boton(); ?>
         </form>
       </div>
     </main>

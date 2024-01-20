@@ -1,0 +1,8 @@
+
+Las carpetas están escritas en minúsculas y en ingles, siendo descritivas con el contenido de ellas. Exactamente igual con los archivos. Usamos guiones bajos (_) o guiones (-) en lugar de espacios si se necesitara poner un nombre más largo.
+Los nombres de las etiquetas y atributos de HTML están en minúsculas.
+Los nombres de las clases de CSS están en minúsculas y separados por guiones.
+En JavaScript, utilizo la convención de camelCase para nombrar variables y funciones.
+PHP:
+Variables: Comienzan con el signo dólar ($). Se nombran en camelCase. El segundo carácter puede ser una letra o un guión bajo. Ejemplo: $miVariable.
+Clases: Se nombran en PascalCase. Ejemplo: MiClase.
