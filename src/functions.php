@@ -4,9 +4,6 @@ if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
-require_once "game.php";
-require_once "words.php";
-
 // Definir una función que muestre el botón de reiniciar el juego
 function mostrar_boton() {
     // Mostrar un botón para reiniciar el juego
@@ -33,7 +30,7 @@ function mostrar_boton() {
   function comprobar_resultado($palabra, $oculta, $intentos) {
     // Si la palabra oculta es igual a la palabra, el usuario ha ganado
     if ($oculta == $palabra) {
-      echo "¡Has ganado! La palabra era $palabra.<br>";
+      echo "¡Has acertado! La parabra correcta era $palabra.<br>";
       // Mostrar el botón de reiniciar el juego
       mostrar_boton();
     } else {
@@ -61,5 +58,19 @@ function mostrar_boton() {
     return $oculta;
   }
 
+  
+
+  // Agregamos la función para reiniciar el juego
+function reiniciar_juego() {
+  // Reiniciamos las variables de sesión
+  $_SESSION['palabra'] = '';
+  $_SESSION['oculta'] = '';
+  $_SESSION['intentos'] = 0;
+  $_SESSION['letras_usadas'] = array();
+
+  // Redirigimos al usuario a la página de inicio o donde prefieras
+  header('Location: index.php');
+  exit();
+}
 
 ?>

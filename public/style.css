@@ -81,12 +81,12 @@ button:active {
 
 
 .word-container {
-  background-color: #b868b3; /* Un color de fondo claro */
-  border: 1px solid #874386; /* Un borde que coincide con el color de tu navbar */
+  background-color: #b868b3; 
+  border: 1px solid #874386; 
   padding: 5px;
   margin: 10px 0;
   width: fit-content;
-  text-align: center; /* Centra el texto */
+  text-align: center; 
 }
 h2 {
   text-align: center;
@@ -96,8 +96,8 @@ h2 {
 }
 #hidden-word {
   font-weight: bold;
-  color: #874386; /* Un color que coincide con el color de tu navbar */
-  font-size: 24px; /* Un tamaño de fuente más grande para destacar la palabra */
+  color: #874386; 
+  font-size: 24px; 
 }
 
 #teclado {

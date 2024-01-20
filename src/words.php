@@ -1,4 +1,5 @@
 <?php
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -7,15 +8,17 @@ if (session_status() == PHP_SESSION_NONE) {
 $palabras = array ("php", "python", "ruby", "javascript", "java", "perl", "rust");
 ;
 
-$palabra = strtoupper($palabras[array_rand($palabras)]);
-$oculta = str_repeat("_", strlen($palabra));
+$palabra = $palabras[array_rand($palabras)]; // La palabra se mantiene en minúsculas
+$oculta = str_repeat("_", strlen($palabra)); // La palabra oculta se inicializa con guiones bajos
 $intentos = 8;
 
 
 $_SESSION['palabra'] = $palabra;
 $_SESSION['oculta'] = $oculta;
 $_SESSION['intentos'] = $intentos;
+
+
+// echo "Un lenguaje de backend es ".$palabra."."
+
 ?>
 
-echo "Un lenguaje de backend es ".$palabra."."
-?>
