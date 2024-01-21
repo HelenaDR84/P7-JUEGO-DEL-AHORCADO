@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>P7 JUEGO DEL AHORCADO</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <a href="https://factoriaf5.org/">Inicio</a>
+        <a href="#news">Otros juegos</a>
+        <a href="https://github.com/HelenaDR84">Contacto</a>
+        <a href="#about">Acerca de</a>
+      </div>
+    </header>
+    <main
+      style="
+      min-height: 100vh; 
+        background-image: url('./img/ba.jpeg');
+        background-size: cover;
+      "
+    >
+      <div>
+        <h1>EL AHORCADO<br />Backend Edition</h1>
+      </div>
+      <div id="start-container" class="start-container">
+        <p class="how-to-play-text">
+          REGLAS DEL JUEGO<br /><br />
+          Dispones de entre 4 y 8 fallos (según tu elección) para resolver la
+          palabra.<br /><br />
+          En esta edición practicaremos nuestros conocimientos sobre los
+          lenguajes de Backend.<br /><br />
+          No están todos pero sí la mayoría.<br /><br />
+          ¡A por todas y suerte!
+        </p>
+        <button id="jugar" class="play-button">Jugar</button>
+      </div>
+      <div class="main-container" action="index.php" method="post">
+        <div class="word-container">
+          <h2>
+            Un lenguaje de programación backend es:
+            <span id="hidden-word"><?php echo $oculta; ?></span>
+          </h2>
+        </div>
+        <?php include "./src/game.php"; 
+        ?>
+        <div id="keyboard">
+          <button id="a" onclick="comprobarletra('A')">A</button>
+          <button onclick="comprobarletra('B')">B</button>
+          <button onclick="comprobarletra('C')">C</button>
+          <button onclick="comprobarletra('D')">D</button>
+          <button onclick="comprobarletra('E')">E</button>
+          <button onclick="comprobarletra('F')">F</button>
+          <button onclick="comprobarletra('G')">G</button>
+          <button onclick="comprobarletra('H')">H</button>
+          <button onclick="comprobarletra('I')">I</button>
+          <button onclick="comprobarletra('J')">J</button>
+          <button onclick="comprobarletra('K')">K</button>
+          <button onclick="comprobarletra('L')">L</button>
+          <button onclick="comprobarletra('M')">M</button>
+          <button onclick="comprobarletra('N')">N</button>
+          <button onclick="comprobarletra('Ñ')">Ñ</button>
+          <button onclick="comprobarletra('O')">O</button>
+          <button onclick="comprobarletra('P')">P</button>
+          <button onclick="comprobarletra('Q')">Q</button>
+          <button onclick="comprobarletra('R')">R</button>
+          <button onclick="comprobarletra('S')">S</button>
+          <button onclick="comprobarletra('T')">T</button>
+          <button onclick="comprobarletra('U')">U</button>
+          <button onclick="comprobarletra('V')">V</button>
+          <button onclick="comprobarletra('W')">W</button>
+          <button onclick="comprobarletra('X')">X</button>
+          <button onclick="comprobarletra('Y')">Y</button>
+          <button onclick="comprobarletra('Z')">Z</button>
+        </div>
+        <form>
+          <input type="text" name="letra" id="letra" maxlength="1" />
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar" />
+          <input
+            type="range"
+            id="Intentos"
+            min="4"
+            max="8"
+            value="5"
+            oninput="actualizarOutput()"
+          />
+          <label for="Intentos">Número de intentos: </label>
+          <output id="valorIntentos">4</output>
+          <input type="hidden" name="palabra" value="<?php echo $oculta; ?>" />
+          <input
+            type="hidden"
+            name="intentos"
+            value="<?php echo $intentos; ?>"
+          />
+          <?php mostrar_boton(); ?>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>©2024.Todos los derechos reservados</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
