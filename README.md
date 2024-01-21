@@ -1,8 +1,8 @@
-# P7-JUEGO-DEL-AHORCADO   
+# P7 JUEGO DEL AHORCADO   
 
 # 🎮 El juego del ahorcado. Backend Edition
 
-El propósito de este proyecto es la creación de una versión del juego clásico “ahorcado”, utilizando PHP como lenguaje de programación principal. Este juego no hará uso de bases de datos ni de Javascript. 
+El propósito de este proyecto es la creación de una versión del juego clásico “ El Ahorcado”, utilizando PHP como lenguaje de programación principal. Este juego no hará uso de bases de datos. 
 
 El juego permitirá a un jugador intentar descifrar una palabra que se encuentra oculta, proporcionando una representación visual de su progreso y llevando un registro de los intentos que ha realizado.
 
@@ -31,7 +31,7 @@ En este juego, el listado de palabras son leguajes de programación de backend, 
   - Utilización de estilos CSS y JS para mejorar la presentación del juego.
 
 ## RESULTADO FINAL
-  <img src= "./">
+  <img src="./public/img/final.result.png" alt="final-result">
 
 ## 💻 Tecnologías Utilizadas
 
