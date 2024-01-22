@@ -101,7 +101,7 @@ h2 {
   font-size: 24px; 
 }
 
-#teclado {
+#keyboard {
   display: grid;
   grid-template-areas:
     "q w e r t y u i o p"
