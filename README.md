@@ -66,6 +66,6 @@ Las contribuciones son bienvenidas. Si tienes alguna sugerencia para mejorar el 
 
 Este proyecto está licenciado bajo los términos de la licencia MIT. Esto significa que puedes usar, copiar, modificar y distribuir el código libremente, siempre que reconozcas la autoría original y no lo uses con fines comerciales.
 
-## 👩‍💻 Autora
+## 👩‍💻 Autora 
 
 [Helena de Rosa](https://github.com/HelenaDR84)
