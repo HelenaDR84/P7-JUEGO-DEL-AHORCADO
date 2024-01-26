@@ -33,7 +33,7 @@ En este juego, el listado de palabras son leguajes de programación de backend, 
 ## RESULTADO FINAL
   <img src="./public/img/final.result.png" alt="final-result">
 
-## 💻 Tecnologías Utilizadas
+## 💻 Tecnologías y herramienta utilizadas
 
 [![My Skills](https://skillicons.dev/icons?i=php,html,css,js,github,vscode)](https://skillicons.dev)
 
